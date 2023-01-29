@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+}
+
+.cover {
+  height: 400px;
+  background-image: url("https://i.etsystatic.com/13509725/r/il/4f377b/3324049846/il_1080xN.3324049846_iblm.jpg");
+  color: white;
+  background-size: 488px;
+}
+
+.card {
+  border: 0 !important;
+}
+
+.products,
+.slider {
+  overflow-x: scroll;
+}
+
+.stripe-container,
+.slider-container {
+  display: flex;
+}
+
+.stripe-container .card {
+  width: 300px;
+  flex-shrink: 0;
+  margin-right: 2rem;
+}
+
+.slider {
+  overflow-x: hidden;
+}
+
+.slider-container {
+  transform: translatex(0);
+  animation: slider 10s infinite;
+}
+
+.image-container {
+  width: 100%;
+  padding-top: 50%;
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
+}
+
+@keyframes slider {
+  0% {
+    transform: translatex(0);
+  }
+  20% {
+    transform: translatex(0);
+  }
+  25% {
+    transform: translatex(-100%);
+  }
+  45% {
+    transform: translatex(-100%);
+  }
+  50% {
+    transform: translatex(-200%);
+  }
+  70% {
+    transform: translatex(-200%);
+  }
+  75% {
+    transform: translatex(-300);
+  }
+  95% {
+    transform: translatex(-300);
+  }
+  100% {
+    transform: translatex(0);
+  }
+}
